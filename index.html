@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV profesional de Cristian Fernando De La Cruz Arias">
+    <title>Cristian De La Cruz - CV Harvard Style</title>
+    <style>
+        /* Variables de diseño */
+        :root {
+            --primary-font: 'Times New Roman', serif;
+            --text-primary: #000;
+            --text-secondary: #666;
+            --border-color: #000;
+            --spacing-unit: 1rem;
+            --section-spacing: 1.5rem;
+        }
+
+        /* Reset y estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--primary-font);
+        }
+
+        body {
+            padding: 2rem;
+            max-width: 8.5in;
+            margin: 0 auto;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        /* Componente: Header */
+        .header {
+            text-align: center;
+            margin-bottom: var(--section-spacing);
+            padding-bottom: calc(var(--spacing-unit) / 2);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            margin-bottom: calc(var(--spacing-unit) / 2);
+        }
+
+        .contact-info {
+            font-size: 0.875rem;
+        }
+
+        /* Componente: Secciones */
+        section {
+            margin: var(--section-spacing) 0;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: var(--spacing-unit) 0;
+        }
+
+        /* Componente: Items */
+        .item {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: calc(var(--spacing-unit) / 4);
+        }
+
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            margin-bottom: calc(var(--spacing-unit) / 4);
+            color: var(--text-secondary);
+        }
+
+        /* Componente: Listas */
+        ul {
+            margin-left: 1.25rem;
+            list-style: disc;
+        }
+
+        li {
+            margin-bottom: calc(var(--spacing-unit) / 4);
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Componente: Grid de habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-unit);
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            .item-header, .item-subheader {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" role="banner" aria-label="Encabezado principal">
+        <h1>Cristian Fernando De La Cruz Arias</h1>
+        <div class="contact-info" aria-label="Información de contacto">
+            Villahermosa, México • 9933603794 • fn.arias@proton.me
+        </div>
+    </header>
+
+    <main role="main">
+        <section aria-labelledby="perfil-title">
+            <h2 class="section-title" id="perfil-title">Perfil Profesional</h2>
+            <p>Profesional en formación con estudios concluidos en Ingeniería Mecánica Eléctrica. Poseo habilidades en organización, trabajo en equipo y atención al detalle. Busco integrarme a un entorno laboral donde pueda contribuir con mis competencias, adaptándome rápidamente a los desafíos y fortaleciendo mi desarrollo profesional.</p>
+        </section>
+
+        <section aria-labelledby="educacion-title">
+            <h2 class="section-title" id="educacion-title">Educación</h2>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Universidad Juárez Autónoma de Tabasco</span>
+                    <span>Cunduacán, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Licenciatura en Ingeniería Mecánica Eléctrica</span>
+                    <span>Agosto 2019 - Mayo 2025</span>
+                </div>
+                <p>Promedio: 9.05/10 | Resultado Sobresaliente en EGEL Plus CENEVAL</p>
+            </article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Centro de Bachillerato Tecnológico Industrial y de Servicios No. 32</span>
+                    <span>Villahermosa, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Carrera Técnica en Mantenimiento Industrial</span>
+                    <span>Agosto 2016 – Junio 2019</span>
+                </div>
+            </article>
+        </section>
+
+        <section aria-labelledby="experiencia-title">
+            <h2 class="section-title" id="experiencia-title">Experiencia Profesional</h2>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>CFE Distribución</span>
+                    <span>Villahermosa, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Prácticas Profesionales</span>
+                    <span>Noviembre 2024 - Presente</span>
+                </div>
+                <ul>
+                    <li>Aplicación de sistemas especializados del sector eléctrico en el Departamento de Operación y Mantenimiento</li>
+                    <li>Implementación de análisis de datos para optimizar procesos de mantenimiento y elaboración de reportes técnicos</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Laboratorio de Manufactura Avanzada, UJAT</span>
+                    <span>Cunduacán, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Servicio Social</span>
+                    <span>Agosto 2023 – Febrero 2024</span>
+                </div>
+                <ul>
+                    <li>Realización de inventarios y mantenimiento preventivo de maquinaria</li>
+                    <li>Colaboración como staff en el 5to Congreso de Ingeniería Mecánica Eléctrica</li>
+                    <li>Apoyo en actividades del diplomado en manufactura avanzada</li>
+                </ul>
+            </article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Rappi, Didi Food, Uber Eats</span>
+                    <span>Villahermosa, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Repartidor Independiente</span>
+                    <span>Enero 2023 – Presente</span>
+                </div>
+                <ul>
+                    <li>Gestión de entregas con bicicleta, demostrando resistencia física y puntualidad</li>
+                    <li>Atención personalizada a clientes y resolución de problemas en situaciones imprevistas</li>
+                    <li>Desarrollo de habilidades en gestión del tiempo y planeación de rutas</li>
+                </ul>
+            </article>
+        </section>
+
+        <section aria-labelledby="habilidades-title">
+            <h2 class="section-title" id="habilidades-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Técnicas</h3>
+                    <ul>
+                        <li>Microsoft Excel (Funciones avanzadas, Tablas dinámicas)</li>
+                        <li>Programación CNC (Fanuc 16i TA, Sinumerik 802)</li>
+                        <li>Diseño CAD (Autodesk Fusion 360)</li>
+                        <li>Python (Básico)</li>
+                        <li>Inglés: Certificación EF SET C2 Proficient</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Competencias</h3>
+                    <ul>
+                        <li>Análisis estadístico y visualización de datos</li>
+                        <li>Pensamiento analítico y resolución de problemas</li>
+                        <li>Comunicación efectiva de resultados técnicos</li>
+                        <li>Gestión de proyectos y trabajo en equipo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="logros-title">
+            <h2 class="section-title" id="logros-title">Logros Destacados</h2>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Delegado estudiantil en el Foro Regional de la IADC</span>
+                    <span>Septiembre 2024</span>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Mentor Académico en el Programa de Mentorías IME, UJAT</span>
+                    <span>Junio 2024</span>
+                </div>
+            </article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Reconocimiento por desempeño académico UJAT</span>
+                    <span>Noviembre 2023</span>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

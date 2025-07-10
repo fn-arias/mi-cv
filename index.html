@@ -33,7 +33,7 @@
             color: var(--text-primary);
         }
 
-        /* Componente: Header */
+        /* Componente: Header - Modificado para nueva disposición */
         .header {
             display: flex;
             align-items: center;
@@ -43,9 +43,19 @@
             border-bottom: 1px solid var(--border-color);
         }
 
+        .profile-image {
+            max-width: 85px;
+            width: 100%;
+            height: auto;
+            margin-right: 2rem;
+            flex-shrink: 0;
+            order: 1;
+        }
+
         .header-content {
-            text-align: center;
+            text-align: left;
             flex: 1;
+            order: 2;
         }
 
         .header h1 {
@@ -56,14 +66,6 @@
 
         .contact-info {
             font-size: 0.875rem;
-        }
-
-        .profile-image {
-            max-width: 85px;
-            width: 100%;
-            height: auto;
-            margin-left: 2rem;
-            flex-shrink: 0;
         }
 
         /* Componente: Secciones */
@@ -137,10 +139,16 @@
                 text-align: center;
             }
 
+            .header-content {
+                text-align: center;
+                order: 2;
+            }
+
             .profile-image {
-                margin-left: 0;
-                margin-top: 1rem;
+                margin-right: 0;
+                margin-bottom: 1rem;
                 max-width: 70px;
+                order: 1;
             }
         }
     </style>
@@ -148,19 +156,19 @@
 
 <body>
     <header class="header" role="banner" aria-label="Encabezado principal">
+        <img src="https://fn-arias.github.io/mi-cv/foto-cv.jpg" alt="Foto de perfil de Cristian De La Cruz" class="profile-image">
         <div class="header-content">
             <h1>Cristian Fernando De La Cruz Arias</h1>
             <div class="contact-info" aria-label="Información de contacto">
                 Villahermosa, México • 9933603794 • cf.arias@outlook.com
             </div>
         </div>
-        <img src="https://fn-arias.github.io/mi-cv/foto-cv.jpg" alt="Foto de perfil de Cristian De La Cruz" class="profile-image">
     </header>
 
     <main role="main">
         <section aria-labelledby="perfil-title">
             <h2 class="section-title" id="perfil-title">Perfil Profesional</h2>
-            <p>Profesional en formación con estudios concluidos en Ingeniería Mecánica Eléctrica. Poseo habilidades en organización, trabajo en equipo y atención al detalle. Busco integrarme a un entorno laboral donde pueda contribuir con mis competencias, adaptándome rápidamente a los desafíos y fortaleciendo mi desarrollo profesional.</p>
+            <p>Ingeniero Mecánico Electricista con sólida formación técnica. Poseo competencias en organización, trabajo en equipo y resolución de problemas. Busco integrarme a un entorno laboral donde pueda contribuir con mis competencias adaptándome rápidamente a los desafíos y fortaleciendo mi desarrollo profesional.</p>
         </section>
 
         <section aria-labelledby="educacion-title">
@@ -191,34 +199,36 @@
         </section>
 
         <section aria-labelledby="certificaciones-title">
-            <h2 class="section-title" id="certificaciones-title">Cursos y certificaciones</h2>
+            <h2 class="section-title" id="certificaciones-title">Cursos y Certificaciones</h2>
+            
             <article class="item">
                 <div class="item-header">
                     <span>Google Data Analytics Professional Certificate</span>
                     <span>Coursera</span>
                 </div>
                 <div class="item-subheader">
-                    <span>Certificado Profesional de Análisis de Datos</span>
+                    <span>Certificado Profesional en Análisis de Datos</span>
                     <span>Febrero 2025 - En curso</span>
                 </div>
-                <p>Completados 3 de 9 cursos:</p>
+                <p>Programa de 9 cursos con más de 180 horas de instrucción en análisis de datos, limpieza de datos, visualización y herramientas como SQL, Tableau y R. Completados 3 de 9 cursos:</p>
                 <ul>
                     <li>Foundations: Data, Data, Everywhere (Febrero 2025)</li>
                     <li>Ask Questions to Make Data-Driven Decisions (Abril 2025)</li>
                     <li>Prepare Data for Exploration (Julio 2025)</li>
                 </ul>
             </article>
-						<article class="item">
-				<div class="item-header">
-					<span>Curso-Taller “Refrigeración y Aire Acondicionado”</span>
-					<span>Cunduacán, Tabasco</span>
-				</div>
-				<div class="item-subheader">
-					<span>UJAT · Jornada de Cursos Disciplinares de Ingeniería Mecánica Eléctrica</span>
-					<span>Agosto 2022</span>
-				</div>
-				<p>Duración: 25 horas</p>
-			</article>
+
+            <article class="item">
+                <div class="item-header">
+                    <span>Curso-Taller "Refrigeración y Aire Acondicionado"</span>
+                    <span>Cunduacán, Tabasco</span>
+                </div>
+                <div class="item-subheader">
+                    <span>División Académica de Ingeniería y Arquitectura, UJAT</span>
+                    <span>Agosto 2022</span>
+                </div>
+                <p>Jornada de Cursos Disciplinares de Ingeniería Mecánica Eléctrica. Duración: 25 horas</p>
+            </article>
         </section>
 
         <section aria-labelledby="experiencia-title">
@@ -234,9 +244,9 @@
                     <span>Noviembre 2024 - Abril 2025</span>
                 </div>
                 <ul>
-                    <li>Asistencia en mantenimiento preventivo y correctivo de transformadores en el taller electromecánico</li>
-                    <li>Apoyo en la organización y seguimiento de órdenes de trabajo para cuadrillas operativas</li>
-                    <li>Implementación de análisis de datos para optimizar procesos de mantenimiento y elaboración de reportes técnicos</li>
+                    <li>Asisití en actividades de mantenimiento preventivo y correctivo de transformadores en  el taller electromecánico</li>
+                    <li>Apoyé en la organización y seguimiento de órdenes de trabajo para cuadrillas operativas</li>
+                    <li>Implementé análisis de datos para optimizar procesos de mantenimiento y elaboré reportes técnicos</li>
                 </ul>
             </article>
 
@@ -250,9 +260,9 @@
                     <span>Agosto 2023 - Febrero 2024</span>
                 </div>
                 <ul>
-                    <li>Realización de inventarios y mantenimiento preventivo de maquinaria</li>
-                    <li>Colaboración como staff en el 5to Congreso de Ingeniería Mecánica Eléctrica</li>
-                    <li>Apoyo en actividades del diplomado en manufactura avanzada</li>
+                    <li>Realicé inventarios y mantenimiento preventivo de maquinaria</li>
+                    <li>Colaboré como staff en el 5to Congreso de Ingeniería Mecánica Eléctrica</li>
+                    <li>Brindé apoyo técnico en actividades del diplomado en manufactura avanzada</li>
                 </ul>
             </article>
         </section>
